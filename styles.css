@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+  margin-top: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.calculator {
+  height: 700px;
+  width: 500px;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-areas:
+    "screen"
+    " group1"
+    " group2"
+    " group3"
+    " group4"
+    "group5";
+  grid-gap: 100px;
+  grid-template-rows: 100px 1fr;
+}
+
+.keys {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  font-size: 36px;
+  text-align: right;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button.number,
+button.operator {
+  height: 80px;
+  width: 80px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+button.all-clear {
+  height: 80px;
+  width: 80px;
+  background-color: #f44336;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.number,
+button.operator,
+button.clear,
+button.negative {
+  height: 80px;
+  width: 80px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 24px;
+  cursor: pointer;
+}
